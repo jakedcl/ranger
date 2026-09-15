@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build -w @ranger/web && node scripts/bundle-vercel-api.mjs",
+  "outputDirectory": "apps/web/dist",
+  "framework": null,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/health", "destination": "/api" },
+    { "source": "/ready", "destination": "/api" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 60,
+      "includeFiles": "{packages/**,apps/api/**,node_modules/@ranger/**}"
+    }
+  }
+}

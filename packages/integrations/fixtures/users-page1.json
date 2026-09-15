@@ -1,0 +1,78 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$skiptoken=demo-page-2",
+  "value": [
+    {
+      "id": "aaaaaaaa-0001-4000-8000-000000000001",
+      "userPrincipalName": "alex.rivera@harbor.example",
+      "mail": "alex.rivera@harbor.example",
+      "displayName": "Alex Rivera",
+      "accountEnabled": true,
+      "usageLocation": "US",
+      "assignedLicenses": [
+        {
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+          "disabledPlans": []
+        }
+      ],
+      "licenseAssignmentStates": [
+        {
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+          "state": "Active",
+          "assignedByGroup": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "aaaaaaaa-0001-4000-8000-000000000002",
+      "userPrincipalName": "casey.nguyen@harbor.example",
+      "mail": "casey.nguyen@harbor.example",
+      "displayName": "Casey Nguyen",
+      "accountEnabled": false,
+      "usageLocation": "US",
+      "assignedLicenses": [],
+      "licenseAssignmentStates": []
+    },
+    {
+      "id": "aaaaaaaa-0001-4000-8000-000000000003",
+      "userPrincipalName": "morgan.ellis@harbor.example",
+      "mail": "morgan.ellis@harbor.example",
+      "displayName": "Morgan Ellis",
+      "accountEnabled": false,
+      "usageLocation": "US",
+      "assignedLicenses": [],
+      "licenseAssignmentStates": []
+    },
+    {
+      "id": "aaaaaaaa-0001-4000-8000-000000000004",
+      "userPrincipalName": "priya.shah@harbor.example",
+      "mail": null,
+      "displayName": "Priya Shah",
+      "accountEnabled": false,
+      "assignedLicenses": []
+    },
+    {
+      "id": "aaaaaaaa-0001-4000-8000-000000000005",
+      "userPrincipalName": "jordan.blake@harbor.example",
+      "mail": "jordan.blake@harbor.example",
+      "displayName": "Jordan Blake",
+      "accountEnabled": true,
+      "usageLocation": "US",
+      "assignedLicenses": [
+        {
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+          "disabledPlans": []
+        }
+      ],
+      "licenseAssignmentStates": [
+        {
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+          "state": "Active",
+          "assignedByGroup": "bbbbbbbb-0002-4000-8000-000000000002",
+          "error": null
+        }
+      ]
+    }
+  ]
+}

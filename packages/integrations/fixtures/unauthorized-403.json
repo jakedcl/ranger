@@ -1,0 +1,10 @@
+{
+  "error": {
+    "code": "Authorization_RequestDenied",
+    "message": "Demo fixture: Insufficient privileges to complete the operation on this collection.",
+    "innerError": {
+      "request-id": "demo-unauthorized-0001",
+      "date": "2026-09-30T12:00:00"
+    }
+  }
+}

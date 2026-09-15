@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/domain" },
+    { "path": "./packages/contracts" },
+    { "path": "./packages/db" },
+    { "path": "./packages/integrations" },
+    { "path": "./packages/test-fixtures" },
+    { "path": "./apps/api" },
+    { "path": "./apps/worker" },
+    { "path": "./apps/web" }
+  ]
+}

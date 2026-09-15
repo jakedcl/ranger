@@ -1,0 +1,8 @@
+{"timestamp":"2026-09-30T15:00:00.000Z","service":"ranger-demo-auth","correlationId":"demo-corr-harbor-001","level":"info","message":"auth.ok","user":"alex.rivera@harbor.example"}
+{"timestamp":"2026-09-30T15:00:05.000Z","service":"ranger-demo-auth","correlationId":"demo-corr-harbor-001","level":"info","message":"auth.ok","user":"casey.nguyen@harbor.example"}
+{"timestamp":"2026-09-30T15:00:30.000Z","service":"ranger-demo-auth","correlationId":"demo-corr-harbor-001","level":"info","message":"config.changed","change":"conditional_access_policy","actor":"northstar-admin"}
+{"timestamp":"2026-09-30T15:00:45.000Z","service":"ranger-demo-auth","correlationId":"demo-corr-harbor-001","level":"error","errorCode":"AuthFailed","message":"token exchange rejected","user":"alex.rivera@harbor.example"}
+{"timestamp":"2026-09-30T15:00:46.000Z","service":"ranger-demo-auth","correlationId":"demo-corr-harbor-001","level":"error","errorCode":"AuthFailed","message":"token exchange rejected","user":"jordan.blake@cedar.example"}
+{"timestamp":"2026-09-30T15:00:47.000Z","service":"ranger-demo-auth","correlationId":"demo-corr-harbor-001","level":"error","errorCode":"AuthFailed","message":"token exchange rejected","user":"alex.rivera@harbor.example"}
+{"timestamp":"2026-09-30T15:02:00.000Z","service":"ranger-demo-auth","correlationId":"demo-corr-harbor-001","level":"info","message":"config.changed","change":"conditional_access_policy_rollback","actor":"northstar-admin"}
+{"timestamp":"2026-09-30T15:02:10.000Z","service":"ranger-demo-auth","correlationId":"demo-corr-harbor-001","level":"info","message":"auth.ok","user":"alex.rivera@harbor.example"}

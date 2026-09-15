@@ -1,0 +1,46 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+  "value": [
+    {
+      "id": "bbbbbbbb-0002-4000-8000-000000000001",
+      "displayName": "Harbor Design Security",
+      "mail": null,
+      "groupTypes": [],
+      "securityEnabled": true,
+      "mailEnabled": false
+    },
+    {
+      "id": "bbbbbbbb-0002-4000-8000-000000000002",
+      "displayName": "Harbor Studio M365",
+      "mail": "studio@harbor.example",
+      "groupTypes": ["Unified"],
+      "securityEnabled": false,
+      "mailEnabled": true
+    },
+    {
+      "id": "bbbbbbbb-0002-4000-8000-000000000003",
+      "displayName": "Harbor All Staff",
+      "mail": "all@harbor.example",
+      "groupTypes": [],
+      "securityEnabled": false,
+      "mailEnabled": true
+    },
+    {
+      "id": "bbbbbbbb-0002-4000-8000-000000000004",
+      "displayName": "Harbor Ops MES",
+      "mail": "ops-sec@harbor.example",
+      "groupTypes": [],
+      "securityEnabled": true,
+      "mailEnabled": true
+    },
+    {
+      "id": "bbbbbbbb-0002-4000-8000-000000000005",
+      "displayName": "Harbor Contractors (dynamic)",
+      "mail": null,
+      "groupTypes": ["DynamicMembership"],
+      "securityEnabled": true,
+      "mailEnabled": false,
+      "membershipRule": "(user.department -eq \"Design\")"
+    }
+  ]
+}

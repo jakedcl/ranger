@@ -1,0 +1,66 @@
+{
+  "bbbbbbbb-0002-4000-8000-000000000001": {
+    "value": [
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000001"
+      },
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000005"
+      }
+    ]
+  },
+  "bbbbbbbb-0002-4000-8000-000000000002": {
+    "value": [
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000005"
+      },
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000006"
+      },
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000007"
+      }
+    ]
+  },
+  "bbbbbbbb-0002-4000-8000-000000000003": {
+    "value": [
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000001"
+      },
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000005"
+      },
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000006"
+      },
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000007"
+      }
+    ]
+  },
+  "bbbbbbbb-0002-4000-8000-000000000004": {
+    "value": [
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000003"
+      }
+    ]
+  },
+  "bbbbbbbb-0002-4000-8000-000000000005": {
+    "value": [
+      {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "aaaaaaaa-0001-4000-8000-000000000001"
+      }
+    ]
+  }
+}

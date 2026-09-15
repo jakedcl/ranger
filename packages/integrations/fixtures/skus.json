@@ -1,0 +1,28 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscribedSkus",
+  "value": [
+    {
+      "capabilityStatus": "Enabled",
+      "consumedUnits": 18,
+      "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+      "skuPartNumber": "O365_BUSINESS_PREMIUM",
+      "prepaidUnits": {
+        "enabled": 25,
+        "suspended": 0,
+        "warning": 0,
+        "lockedOut": 0
+      }
+    },
+    {
+      "capabilityStatus": "Enabled",
+      "consumedUnits": 2,
+      "skuId": "f245ecc8-75af-4f8e-9386-94009130390d",
+      "skuPartNumber": "O365_BUSINESS_ESSENTIALS",
+      "prepaidUnits": {
+        "enabled": 5,
+        "suspended": 0,
+        "warning": 0
+      }
+    }
+  ]
+}

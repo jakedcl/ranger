@@ -1,0 +1,39 @@
+{
+  "name": "ranger",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,worker,web -c blue,magenta,green \"npm run dev -w @ranger/api\" \"npm run dev -w @ranger/worker\" \"npm run dev -w @ranger/web\"",
+    "build": "npm run build -ws --if-present",
+    "build:vercel": "npm run build -w @ranger/web && node scripts/bundle-vercel-api.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc -b --pretty false",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "db:migrate": "npm run migrate -w @ranger/db",
+    "db:seed": "npm run seed -w @ranger/db",
+    "db:reset": "npm run reset -w @ranger/db",
+    "setup": "npm run db:migrate && npm run db:seed",
+    "provision:admin": "npm run provision:admin -w @ranger/db",
+    "backup:dev": "bash scripts/backup-dev.sh",
+    "perf:sample": "node scripts/perf-sample.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.35.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.0",
+    "vitest": "^3.2.4"
+  }
+}

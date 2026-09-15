@@ -1,0 +1,11 @@
+{
+  "error": {
+    "code": "TooManyRequests",
+    "message": "Demo fixture: Graph throttling (429). Retry after the indicated delay.",
+    "innerError": {
+      "request-id": "demo-throttle-0001",
+      "date": "2026-09-30T12:00:00"
+    }
+  },
+  "retryAfterSeconds": 12
+}

@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ranger
+      POSTGRES_PASSWORD: ranger
+      POSTGRES_DB: ranger_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - ranger_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ranger -d ranger_dev"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # App processes run on the host via `npm run dev` for local development.
+  # Public cloud deployment is pending — do not claim a live URL from this file.
+  # DATABASE_URL example with this compose:
+  #   postgres://ranger:ranger@127.0.0.1:5432/ranger_dev
+
+volumes:
+  ranger_pg:

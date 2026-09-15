@@ -1,0 +1,67 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+  "value": [
+    {
+      "id": "aaaaaaaa-0001-4000-8000-000000000006",
+      "userPrincipalName": "riley.quinn@harbor.example",
+      "mail": "riley.quinn@harbor.example",
+      "displayName": "Riley Quinn",
+      "accountEnabled": true,
+      "usageLocation": "US",
+      "assignedLicenses": [
+        {
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+          "disabledPlans": []
+        }
+      ],
+      "licenseAssignmentStates": [
+        {
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+          "state": "Active",
+          "assignedByGroup": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "aaaaaaaa-0001-4000-8000-000000000007",
+      "userPrincipalName": "taylor.brooks@harbor.example",
+      "mail": "taylor.brooks@harbor.example",
+      "displayName": "Taylor Brooks",
+      "accountEnabled": true,
+      "usageLocation": "CA",
+      "assignedLicenses": [
+        {
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+          "disabledPlans": ["efb87545-963c-4e0d-99df-69c6916d9eb0"]
+        }
+      ],
+      "licenseAssignmentStates": [
+        {
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+          "state": "Active",
+          "assignedByGroup": null,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "aaaaaaaa-0001-4000-8000-000000000008",
+      "userPrincipalName": "svc-backup@harbor.example",
+      "mail": null,
+      "displayName": "Harbor Backup Service",
+      "accountEnabled": true,
+      "assignedLicenses": []
+    },
+    {
+      "id": "aaaaaaaa-0001-4000-8000-000000000009",
+      "userPrincipalName": "guest.collaborator_external#EXT#@harbor.example",
+      "mail": "guest.collaborator@partner.example",
+      "displayName": "Guest Collaborator",
+      "accountEnabled": true,
+      "usageLocation": null,
+      "assignedLicenses": [],
+      "licenseAssignmentStates": []
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ranger
+          POSTGRES_PASSWORD: ranger
+          POSTGRES_DB: ranger_dev
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U ranger -d ranger_dev"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://ranger:ranger@127.0.0.1:5432/ranger_dev
+      TEST_DATABASE_URL: postgres://ranger:ranger@127.0.0.1:5432/ranger_test
+      BETTER_AUTH_SECRET: ci-better-auth-secret-32-chars-min
+      BETTER_AUTH_URL: http://127.0.0.1:5173
+      WEB_ORIGIN: http://127.0.0.1:5173
+      API_HOST: 127.0.0.1
+      API_PORT: "4000"
+      RANGER_MODE: private
+      SEED_STAFF_PASSWORD: ranger-dev-only-password
+      LOG_LEVEL: error
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: sudo apt-get update && sudo apt-get install -y postgresql-client
+      - run: PGPASSWORD=ranger createdb -h 127.0.0.1 -U ranger ranger_test || true
+      - run: npm ci
+      - run: npx eslint .
+      - run: npx vitest run
+      - run: npm run db:migrate
+      - run: npm run db:seed
+      - run: npm run build -w @ranger/web

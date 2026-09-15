@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+.env.test.local
+*.pem
+*.key
+credentials.json
+
+# Build
+dist/
+build/
+api/index.js
+api/index.js.map
+coverage/
+.turbo/
+.vite/
+*.tsbuildinfo
+
+# Test artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Evidence and private local storage
+var/
+storage/
+data/evidence/
+var/backups/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Generated
+.cache/
+.vercel/
+.vercel
+.env*
+.env.vercel
+.env.local
