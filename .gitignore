@@ -48,5 +48,6 @@ npm-debug.log*
 .vercel/
 .vercel
 .env*
+!.env.example
 .env.vercel
 .env.local
