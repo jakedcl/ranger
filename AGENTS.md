@@ -6,15 +6,9 @@ RANGER is an IT administration product for companies, people, digital accounts, 
 
 Read and follow [RANGER-M0-M5-BUILD-SPEC.md](./RANGER-M0-M5-BUILD-SPEC.md). Do not invent product scope, Microsoft capabilities, or archive behavior that contradicts it.
 
-## Current milestone
+## Current status
 
-**M5 — Complete verification and portfolio delivery**
-
-M4 investigations are implemented (Microsoft audit still Blocked). Finish end-to-end polish, documentation, operational verification, demo packaging, and the acceptance matrix. Separate live/hosted gates from completed software work. Do not invent live Graph or public hosting success.
-
-Live Microsoft **writes** and optional Graph audit remain **Blocked** without an authorized test tenant.
-
-Never commit credentials or real employee data. Distinguish simulated, implemented, and live-verified behavior.
+See [docs/build-status.md](./docs/build-status.md) for the current milestone and what is Blocked. Live Microsoft writes and Graph audit stay Blocked without an authorized test tenant; never claim live Graph or hosting success.
 
 ## Required status record
 
